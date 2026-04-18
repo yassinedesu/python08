@@ -178,7 +178,7 @@ def run_analysis_and_save_chart(
     axis.set_ylabel("Signal amplitude")
     axis.legend()
     axis.set_facecolor("#0d0d0d")
-    figure.patch.set_facecolor("#1a1a1a")
+    figure.patch.set_facecolor("#1a1a1a")  # type: ignore[attr-defined]
 
     figure.savefig(output_filename, dpi=100, bbox_inches="tight")
     plt.close(figure)
